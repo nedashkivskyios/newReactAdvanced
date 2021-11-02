@@ -44,13 +44,27 @@ const Accordion = () => {
   console.log('Accordion rendering')
   return (
     <div>
-      <h3>Accordion</h3>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+      <AccordionTitle />
+      <AccordionBody />
     </div>
+  )
+}
+
+const AccordionTitle = () => {
+  console.log('AccordionTitle rendering')
+  return (
+    <h3>Accordion</h3>
+  )
+}
+
+const AccordionBody = () => {
+  console.log('AccordionBody rendering')
+  return (
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
   )
 }
 
