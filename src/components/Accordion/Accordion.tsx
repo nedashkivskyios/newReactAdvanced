@@ -4,14 +4,15 @@ import {AccordionTitle} from "./AccordionTitle/AccordionTitle";
 
 type PropsType = {
   accordionTitle: string
+  collapsed: boolean
 }
 
 export const Accordion: FC<PropsType> = ({accordionTitle, ...restProps}) => {
   console.log('Accordion rendering')
   return (
     <div>
-      <AccordionTitle title={accordionTitle} />
-      <AccordionBody/>
+      <AccordionTitle title={accordionTitle}/>
+      {!restProps.collapsed && <AccordionBody/>}
     </div>
   )
 }

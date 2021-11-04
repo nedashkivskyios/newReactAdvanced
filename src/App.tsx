@@ -9,7 +9,8 @@ const App = () => {
     <div className="App">
       <PageTitle title={"This is app component"}/>
       <Rating value={4}/>
-      <Accordion accordionTitle={"Accordion eto"}/>
+      <Accordion collapsed={true} accordionTitle={"Accordion eto"}/>
+      <Accordion collapsed={false} accordionTitle={"Accordion uncollapsed"}/>
     </div>
   );
 }
